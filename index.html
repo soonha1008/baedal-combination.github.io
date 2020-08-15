@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/sauce.css">
+</head>
+<body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand">배달음식 조합기</a>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link active" href="index.html">종합조합기 <span class="sr-only">(current)</span></a>
+              </div>
+          </div>
+    </nav>
+
+
+<br>
+<div class = "container">
+<div class="welcome">
+    <p>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#hello">
+        환영합니다
+        </button>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#HowToUse">
+            조합기 사용법
+        </button>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#criteria">
+            기준표
+        </button>
+    </p>
+</div>
+<div class="welcome">
+    <div class="collapse" id="hello">
+        <div class="card card-body">
+            <img src="https://media1.giphy.com/media/fU4elxKlRsulB4Jy7w/giphy.gif" alt="welcome!">
+            <pre>
+
+<u>사람은 많은데 얼마나 시켜야할지 모르겠네.....</u> 라는 고민을 하신적 있으신가요?
+
+공개합니다. 배달음식 조합기!
+
+배달음식 조합기에게 인원 수, 시키려는 음식을 알려주시면 시키셔야 할 양과 비율을 알려드립니다.
+더 이상 고민하지 마시고 배달음식 조합기를 믿으세요!
+</pre>
+    </div>
+    </div>
+    <div class="collapse" id="HowToUse">
+        <div class="card card-body"><pre>
+조합기 (현명하게) 사용하기:
+
+1. 조합기를 사용하여 시키실 음식의 양을 파악하세요.
+2. 고민하지말고 어플키고 바로 주문하세요!
+        </pre>
+            
+        </div>
+    </div>
+    <div class="collapse" id="criteria">
+        <div class = "card card-body">
+
+<pre>
+                  <b>기준표</b>
+
+피자            도미노피자 라지사이즈
+치킨            BBQ 황금올리브
+짜장면          홍콩반점 짜장면/짬뽕
+햄버거세트      맘스터치 싸이버거 세트
+족발            족발 앞다리살
+떡볶이          초등학교 앞에있는 분식집 떡볶이</pre>
+        </div>
+    </div>
+
+</div>
+</div>
+
+<br>
+
+<!--**********************************
+        displays number of people 
+    ********************************** -->
+
+<div class="shadow-sm p-3 mb-5 rounded container">
+
+    <h1>배달음식 조합기</h1>
+    <br>
+    <div class="PeopleNumber">
+        <p>인원 수를 입력하세요 &MediumSpace;</p>
+        <input type="number" id="people" max="1000" min="1"/>
+    </div>
+    <br>      
+    <p>조합하실 메뉴를 선택하세요</p>
+    <br>
+
+
+
+<!--**********************************
+        displays menu 
+    ********************************** -->
+
+    <div class = "menu">
+        <tr>
+            <td><input type="checkbox" id = "pizza"></td>
+            <label for="pizza">&nbsp;피자  &nbsp;</label>
+            <td><input type="checkbox" id = "chicken"></td>
+            <label for="chicken">&nbsp;치킨  &nbsp;</label>
+            <td><input type="checkbox" id = "china"></td>    
+            <label for="china">&nbsp;짜장면  &nbsp;</label>
+            <td><input type="checkbox" id = "burger"></td>    
+            <label for="burger">&nbsp;햄버거세트&nbsp;</label>
+            <td><input type="checkbox" id = "porkleg"></td>
+            <label for="porkleg">&nbsp;족발  &nbsp;</label>
+            <td><input type="checkbox" id = "tbk"></td>
+            <label for="tbk">&nbsp;떡볶이  &nbsp;</label>
+
+
+        </tr>
+    </div>
+    <br>
+
+<!--**********************************
+        displays button
+    ********************************** -->
+
+    <div class= "buttons" data-toggle="buttons">
+        <label class="btn btn-danger">
+            <input type="checkbox" autocomplete="off" id="hungry"> 배고파!
+        </label>
+        <button class="btn btn-primary" id="button">
+            조합하기
+        </button>  <!--lead to page 2 -->
+
+    </div>
+
+
+    <div id="div1"></div>
+
+    
+
+</div>
+
+
+
+<script src="assets/script.js"></script>
+</body>
+</html>
