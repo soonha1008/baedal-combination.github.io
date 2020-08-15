@@ -1,0 +1,46 @@
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+.padding{
+    padding-top: 70px;
+}
+
+.container{
+    border: 1px solid rgb(218, 211, 211);
+    width: 80%;
+    background-color: rgb(238, 236, 236);
+}
+
+
+
+.PeopleNumber{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+}
+
+.menu {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    padding:  1px;
+}
+
+.button-next{
+   display: flex;
+   justify-content: right;
+   
+}
+
+.welcome{
+    padding-top: 5px;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
