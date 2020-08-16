@@ -1,4 +1,3 @@
-
 body{
     background-color: rgb(255, 255, 255);
 }
@@ -44,3 +43,30 @@ body{
     flex-wrap: wrap;
 }
 
+.welcome-child{
+    width: 80%;
+    display: flex;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+
+.welcome-child-1{
+    display: flex;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+@media screen and (max-width: 500px) {
+    .welcome-child{
+        width: 100%;
+        display: flex;
+        align-content: center;
+        flex-wrap: nowrap;
+    }
+    .welcome-child-1 {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+}
