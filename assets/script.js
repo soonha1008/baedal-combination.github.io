@@ -98,7 +98,7 @@ document.getElementById("button").onclick= function(){
         var Output = document.createElement("p").appendChild(document.createTextNode("음식도 없는데 사람들을 초대한다고요??"));
         document.getElementById("div1").appendChild(Output);
         var gifinput = document.createElement("img");
-        gifinput.src = "assets/pictures/against.gif";
+        gifinput.src = "assets/pictures/against.jpg";
         document.getElementById("div1").appendChild(document.createElement("br"));
         document.getElementById("div1").appendChild(gifinput);
         return;
