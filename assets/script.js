@@ -77,11 +77,12 @@ document.getElementById("button").onclick= function(){
     }
 
     if (people==69 || people==5877){
-        
         var gifinput = document.createElement("img");
         gifinput.src = "assets/pictures/fishhead.png";
         document.getElementById("div1").appendChild(document.createElement("br"));
         document.getElementById("div1").appendChild(gifinput);
+                
+
     }
 
     if (people < 0){
@@ -95,6 +96,7 @@ document.getElementById("button").onclick= function(){
 
     //if none of the variables are checked, return
     if(!pizza&&!chicken&&!china&&!burger&&!porkleg&&!tbk){
+        document.getElementById("div1").appendChild(document.createElement("br"));
         var Output = document.createElement("p").appendChild(document.createTextNode("음식도 없는데 사람들을 초대한다고요??"));
         document.getElementById("div1").appendChild(Output);
         var gifinput = document.createElement("img");
